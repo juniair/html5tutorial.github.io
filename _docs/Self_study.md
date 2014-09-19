@@ -20,6 +20,7 @@ HTML을 배우는 좋은 방법 중 하나는 실제로 작동하는 웹 사이�
 
 *   모질라 재단에서 운영하는 HTML 문서의 [공식 한글 번역](https://developer.mozilla.org/ko/docs/Web/HTML/HTML5)
 *   Web Standard Korea의 [HTML5 가이드](http://webstandards.or.kr/html5/)
+*   [HTML5 명세서 한글 번역](http://html5.clearboth.org/spec.html)
 
 
 # 영어 공부하기
