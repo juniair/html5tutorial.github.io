@@ -1,0 +1,23 @@
+# Site settings
+title: HTML5 자습서
+email: jania902@gmail.com
+description: HTML5, CSS, Javascript 자습하기
+baseurl: ""
+url: "http://html5tutorial.github.io"
+highlighter: pygments
+collections:
+  docs:
+    output: true
+  html:
+    output: true
+  css:
+    output: true
+defaults:
+  -
+    scope:
+      path: "" # all files in the project
+    values:
+      layout: "default"
+
+# Build settings
+markdown: kramdown

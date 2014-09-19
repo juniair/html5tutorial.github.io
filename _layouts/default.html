@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <script src="/assets/js/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/postproc.js"></script>
+    <script>
+        $(function() {
+            postproc('body > article');
+        })
+    </script>
+</head>
+
+<body>
+<!-- GTM { -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T6BG2B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T6BG2B');</script>
+<!-- } GTM -->
+
+<!-- FB { -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=613868738726819&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- } FB -->
+
+<header class="site-header">
+<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+</header>
+
+<aside class="collections">
+    <h2>가이드</h2>
+    <ul>
+        {% for p in site.docs %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>HTML</h2>
+    <ul>
+        {% for p in site.html %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h2>CSS</h2>
+    <ul>
+        {% for p in site.css %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}
+    </ul>
+</aside>
+
+<article>
+  <header>
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+  </header>
+
+  {{ content }}
+</article>
+
+<!-- FB like { -->
+<div class="fb-like" data-href="http://localhost:4000/docs/Validation.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+<!-- } FB like -->
+
+<footer>
+<p><a href="https://github.com/html5tutorial/html5tutorial.github.io/issues">개선점, 오타, 깨진 링크, 아이디어 제안하기</a></p>
+<p><a href="https://github.com/html5tutorial/html5tutorial.github.io/edit/master{{ page.url | replace:'.html','.md' | replace:'/html/','/_html/' | replace:'/css/','/_css/ | replace:'/docs/','/_docs/'}}">이 페이지 편집하기</a></p>
+</footer>
+
+</body>
+</html>
