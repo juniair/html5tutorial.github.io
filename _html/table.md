@@ -5,6 +5,7 @@ table [요소](/docs/HTML_Element.html)는 "표"를 마크업할 때 쓰입니�
 
 {% highlight html %}
 <table>
+  <caption>표 1. 최근에 읽은 책</caption>
   <thead>
     <tr>
       <th>제목</th>
@@ -31,6 +32,8 @@ table [요소](/docs/HTML_Element.html)는 "표"를 마크업할 때 쓰입니�
 ``@pp dom``
 
 ``table``은 [thead 요소](/html/thead.html), [tbody 요소](/html/tbody.html), [tfoot 요소](/html/tfoot.html) 요소로 구성됩니다. 단 상단이나 하단에 헤더나 풋터가 없는 경우 ``thead``나 ``tfoot``은 생략할 수 있습니다. 위 예시에서는 ``tfoot``을 사용하지 않고 있습니다.
+
+``caption``은 표의 제목입니다. 제목이 없는 경우 생략할 수 있습니다.
 
 ``thead``, ``tbody``, ``tfoot`` 요소 안에는 표의 각 행(row)을 나타내는 [tr 요소](/html/tr.html)를 넣습니다. 예를 들어 표의 본문에 세 개의 행이 있는 경우 아래와 같이 마크업 합니다:
 

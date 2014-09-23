@@ -83,3 +83,8 @@ p {
 {% endhighlight %}
 
 텍스트 색상(color)은 흰색, 텍스트 꾸미기(text-decoration)는 밑줄, 배경색(background-color)은 검정색, 텍스트 정렬(text-align)은 우측으로 지정하고 있습니다.
+
+
+# 관련 문서
+
+*   CSS selector에 대한 더 자세한 설명은 [Selector](/css/Selector.html) 문서를 참고하세요
