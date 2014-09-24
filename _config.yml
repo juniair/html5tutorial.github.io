@@ -12,6 +12,8 @@ collections:
     output: true
   css:
     output: true
+  js:
+    output: true
 defaults:
   -
     scope:

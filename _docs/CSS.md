@@ -87,4 +87,5 @@ p {
 
 # 관련 문서
 
-*   CSS selector에 대한 더 자세한 설명은 [Selector](/css/Selector.html) 문서를 참고하세요
+{% for p in site.css %}
+*   [{{ p.title }}]({{ p.url }}){% endfor %}
