@@ -18,8 +18,7 @@ img [요소](/docs/HTML_Element.html)는 "Image"의 약자이며, 웹 문서에 
 
 위 HTML은 브라우저에서 아래와 같이 표현됩니다:
 
->   월드 와이드 웹의 창시자
->   ![Tim Berners-Lee](http://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg)
+``@pp run``
 
 ``img`` 태그에서 가장 중요한 두 가지 속성은 ``src``와 ``alt``입니다:
 
