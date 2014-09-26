@@ -13,6 +13,10 @@
     <script>
         $(function() {
             postproc('body > article');
+
+            $('form.search').on('submit', function(e) {
+                $('form.search input[name="q"]').val($('#searchField').val() + ' site:html5tutorial.github.io');
+            });
         })
     </script>
 </head>
@@ -40,7 +44,12 @@ fjs.parentNode.insertBefore(js, fjs);
 <!-- } FB -->
 
 <header class="site-header">
-<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <form class="search" method="GET" action="https://www.google.com/search">
+        <label for="searchField">검색: </label>
+        <input type="search" id="searchField" name="searchField" value="">
+        <input type="hidden" name="q" value="">
+    </form>
 </header>
 
 <aside class="collections">
