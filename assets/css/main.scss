@@ -115,6 +115,7 @@ form.search {
 form.search input {
   padding: 1px 5px;
   margin: 0 5px;
+  width: 10em;
 }
 
 body > footer {
@@ -228,7 +229,7 @@ body > footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .html-elements {
+  .collections {
     display: none;
   }
 }
