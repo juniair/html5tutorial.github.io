@@ -4,7 +4,7 @@ title: 기본적인 HTML 태그들
 
 HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 가지기 때문에 이 모든 것을 한번에 모두 익히기는 어렵습니다. 이 문서는 자주 쓰이는 몇 가지 태그들과 속성을 간략히 소개합니다.
 
-# 텍스트 레벨 태그들 - a, em, strong
+## 텍스트 레벨 태그들 - a, em, strong
 
 요소들:
 
@@ -25,7 +25,7 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 ``@pp run``
 
 
-# 단락과 소제목 - p, h1, h2, h3, h4, h5, h6
+## 단락과 소제목 - p, h1, h2, h3, h4, h5, h6
 
 요소들:
 
@@ -48,7 +48,7 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 ``@pp run``
 
 
-# 목록 - ul, ol, li
+## 목록 - ul, ol, li
 
 요소들:
 
@@ -77,7 +77,7 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 ``@pp run``
 
 
-# 표 - table, thead, tbody, tr, th, td
+## 표 - table, thead, tbody, tr, th, td
 
 요소들:
 
@@ -114,7 +114,7 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 ``@pp run``
 
 
-# 미디어 - img, video, audio
+## 미디어 - img, video, audio
 
 요소:
 
@@ -127,7 +127,10 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 {% highlight html %}
 <p>
   문장 중간에
-  <img src="http://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg" alt="Tim Berners-Lee 얼굴">
+  <img
+    src="http://www.w3.org/Press/Stock/Berners-Lee/2001-europaeum-eighth.jpg"
+    width="100" height="60"
+    alt="Tim Berners-Lee 얼굴">
   이미지를 넣어보아요.
 </p>
 {% endhighlight %}
@@ -135,6 +138,6 @@ HTML에는 수십가지 태그가 있고, 각 태그는 서로 다른 속성을 
 ``@pp run``
 
 
-# 다음 단계
+## 다음 단계
 
 *   [유효성 검사](/docs/Validation.html)

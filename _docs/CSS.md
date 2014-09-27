@@ -4,7 +4,7 @@ title: CSS
 CSS는 <strong>C</strong>ascading <strong>S</strong>tyle<strong>s</strong>heet의 약자이며 [HTML](/docs/HTML.html) 같은 마크업 언어로 작성된 문서를 꾸미기 위해 사용합니다.
 
 
-# 따라하기
+## 따라하기
 
 HTML 문서의 [head 요소](/html/head.html) 안에 [style 요소](/html/style.html)를 넣고 CSS 코드를 적으면 해당 문서를 다양하게 꾸밀 수 있습니다:
 
@@ -47,7 +47,7 @@ p {
 <p style="color: white; text-decoration: underline; background-color: black; text-align: right;">Hello HTML5!</p>
 </blockquote>
 
-# 문법 설명
+## 문법 설명
 
 CSS는 아래 형식으로 작성합니다:
 
@@ -85,7 +85,7 @@ p {
 텍스트 색상(color)은 흰색, 텍스트 꾸미기(text-decoration)는 밑줄, 배경색(background-color)은 검정색, 텍스트 정렬(text-align)은 우측으로 지정하고 있습니다.
 
 
-# 관련 문서
+## 관련 문서
 
 {% for p in site.css %}
 *   [{{ p.title }}]({{ p.url }}){% endfor %}

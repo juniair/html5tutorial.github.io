@@ -88,15 +88,15 @@ function postproc(rootSelector) {
 
         var $iframeContainer = $('<blockquote><iframe src="about:blank" style="width: 100%; height: 10px; border: 0"></iframe></blockquote>');
         $iframeContainer.insertAfter($parent);
-        var doc = $iframeContainer.get(0).firstChild.contentDocument.documentElement;
-        doc.innerHTML =
+        var doc = $iframeContainer.get(0).firstChild.contentDocument.write(
             '<!DOCTYPE html>' +
             '<html><head>' +
             '   <meta charset="utf-8">' +
-            '   <link rel="stylesheet" href="/assets/css/main.css">' +
+            '   <link rel="stylesheet" href="/assets/css/barebone.css">' +
             '   <style>' + cssBlocks.join('\n') + '</style>' +
             '   <script>' + jsBlocks.join(';\n') + '</script>' +
-            '</head><body style="margin: 0; padding: 0;"><div style="border: 1px solid transparent;">' + htmlBlocks.join('\n') + '</div></body></html>';
+            '</head><body style="margin: 0; padding: 0;"><div style="border: 1px solid transparent;">' + htmlBlocks.join('\n') + '</div></body></html>'
+        );
 
         // adjust iframe height
         window.setTimeout(function() {

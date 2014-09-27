@@ -2,7 +2,7 @@
 title: HTML 문서 기본 구조
 ---
 
-# HTML 뼈대
+## HTML 뼈대
 
 [HTML 개요](/docs/HTML.html)에서 봤던 실제 HTML 예시는 아래와 같습니다:
 
@@ -33,7 +33,7 @@ title: HTML 문서 기본 구조
 {% endhighlight %}
 
 
-# DTD 선언
+## DTD 선언
 
 여러분이 작성하는 문서가 HTML임을 명시하기 위해서는 문서의 첫 줄에 아래와 같이 [DTD 선언](/docs/DTD_declaration.html)을 적어야 합니다. DTD란 문서 형식 정의(Document Type Definition)의 약어입니다:
 
@@ -44,7 +44,7 @@ title: HTML 문서 기본 구조
 문법에 대한 상세한 설명은 [HTML 구조와 문법](/docs/HTML_syntax.html)을 참고하세요.
 
 
-# 최상위 요소
+## 최상위 요소
 
 DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTML 문서는 하나의 [html 요소](/html/html.html)가 나와야 합니다. 따라서 다음과 같이 적습니다:
 
@@ -55,7 +55,7 @@ DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTM
 {% endhighlight %}
 
 
-# 머리와 몸
+## 머리와 몸
 
 [html 요소](/html/html.html) 안에는 **문서의 머리와 몸통**이 담겨야 합니다. 각각 [head 요소](/html/head.html), [body 요소](/html/body.html)라고 부릅니다:
 
@@ -73,7 +73,7 @@ DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTM
 [body 요소](/html/body.html)에는 실제 문서가 담기고, [head 요소](/html/head.html)에는 문서에 대해 설명하는 정보들이 담깁니다.
 
 
-# head 요소
+## head 요소
 
 [head 요소](/html/head.html) 안에 담기는 요소 중 가장 중요한 두 가지는 문서의 문자셋(character set)을 지정하는 정보와 문서의 제목을 나타내는 정보입니다:
 
@@ -91,7 +91,7 @@ DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTM
 ``<meta>`` 요소는 지금까지 봤던 다른 요소와 차이점이 있습니다. 문법에 대한 더 자세한 설명을 읽으려면 [HTML 문법](/docs/html_syntax.html) 문서를 참고하세요. 궁금하지 않다면 지금 읽지 않아도 괜찮습니다.
 
 
-# body 요소
+## body 요소
 
 [body 요소](/html/body.html)에는 문서의 본문이 담깁니다. 예를 들어 두 개의 [단락(**p**aragraph)](/html/p.html)으로 구성된 본문은 아래와 같이 적을 수 있습니다:
 
@@ -109,7 +109,7 @@ DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTM
 >   두 번째 단락.
 
 
-# 종합 및 복습
+## 종합 및 복습
 
 지금까지 설명한 HTML 조각들을 모두 합쳐서 보면 다음과 같습니다:
 
@@ -130,6 +130,6 @@ DTD 선언 바로 다음부터 실제 HTML 마크업을 적습니다. 모든 HTM
 이 문서를 [준비물](/docs/Preparation.html)에서 배운 JS Bin에 적어 보세요. 복사해서 붙여넣기를 해도 되지만 기왕이면 직접 한글자씩 입력하는 것이 좋습니다.
 
 
-# 다음 단계
+## 다음 단계
 
 *   [기본적인 HTML 태그들](/docs/Basic_HTML_tags.html)

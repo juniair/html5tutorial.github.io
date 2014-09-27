@@ -4,12 +4,12 @@ title: HTML 개요
 HTML은 하이퍼텍스트 마크업 언어(<strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)의 약자로, 웹 페이지를 만들 때 사용되는 문서 형식입니다.
 
 
-# 하이퍼텍스트(Hypertext)란?
+## 하이퍼텍스트(Hypertext)란?
 
 하이퍼텍스트(Hypertext)란 하이퍼링크(Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결되어 있는 고리를 말합니다. 일반적인 [웹 브라우저](/docs/Web_browser.html)들에서는 HTML 문서의 하이퍼링크를 표현할 때 파란색 글씨에 밑줄을 그어 나타내며, 마우스로 해당 글씨를 클릭하면 연결된 문서로 이동할 수 있습니다.
 
 
-# 마크업 언어(Markup language)란?
+## 마크업 언어(Markup language)란?
 
 마크업 언어란 문서에 부가적인 정보를 표시(marking-up)하기 위해 고안된 표기 방식을 뜻합니다.
 
@@ -42,7 +42,7 @@ HTML은 하이퍼텍스트 마크업 언어(<strong>H</strong>yper<strong>t</str
 가 됩니다.
 
 
-# HTML 예시
+## HTML 예시
 
 위 마크업에서는 한글로 된 태그 이름을 사용하고 있는데 이는 이해를 돕기 위한 가상의 예입니다. 실제 HTML의 태그 이름은 영어 알파벳을 사용합니다. 다음은 실제 HTML 마크업 예시입니다:
 
@@ -66,6 +66,6 @@ HTML은 하이퍼텍스트 마크업 언어(<strong>H</strong>yper<strong>t</str
 문법에 대한 더 자세한 설명을 읽으려면 [HTML 문법](/docs/HTML_syntax.html) 문서를 참고하세요. 궁금하지 않다면 지금 읽지 않아도 괜찮습니다.
 
 
-# 다음 단계
+## 다음 단계
 
 *   [HTML 뼈대 작성하기](/docs/HTML_boilerplate.html)

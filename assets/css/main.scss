@@ -4,151 +4,150 @@
 
 @import
   "normalize",
-  "syntax-highlighting"
+  "syntax-highlighting",
+  "grid"
 ;
 
 
-$max-width: 45em;
-
-
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  color: #333;
-}
+$columns: 12;
+$column-width: 60;
+$gutter-width: 40;
+$total-width: 100%;
 
 body {
-  margin: 1em auto;
-  padding: 1em;
-  max-width: $max-width;
-  font-family: "NanumGothic", "Malgun Gothic", "Apple SD Neo Gothic", "AppleGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-html, p, table, blockquote, li {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 960px;
   font-size: 14px;
+  font-family: "NanumGothic", "Malgun Gothic", "Apple SD Neo Gothic", "AppleGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  line-height: 1.6;
 }
 
-h1,h2,h3,h4,h5,h6,p,li {
-  line-height: 150%;
-}
-
-h1,h2,h3,h4,h5,h6,p,blockquote {
-  margin: 1.5em 0 1em;
-}
-li {
-  margin: 0.5em 0;
-}
-
-blockquote {
-  box-shadow: 1px 1px 2px #666;
-  padding: 0.25em 1em;
-}
-
-pre {
-  box-shadow: 1px 1px 2px #666;
-  background-color: #F3F3F3;
-  padding: 1em 1em;
-  font-family: monospace;
-}
-
-p > code,
-li > code {
-  background-color: #F3F3F3;
-  padding: 0.1em 0.2em;
-  font-family: monospace;
+body > * {
+  box-sizing: border-box;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 a {
-  color: #4183c4;
+  color: #2569ff;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(37, 105, 255, 0.1);
 }
 a:hover {
-  border-bottom-color: #4183c4;
+  border-bottom-color: rgba(37, 105, 255, 1);
+}
+ul, ol {
+  padding-left: 1em;
 }
 
-table {
-  margin: 1em 0 2em;
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 2px;
-  border-color: gray;
+body > h1 {
+  @include column(12);
 }
-
-th {
-  vertical-align: bottom;
-  text-align: left;
-  border-bottom: 1px solid #dddddd;
-  padding: 8px;
-  line-height: 1.428571429;
+body > .collections {
+  @include column(4);
+  padding-left: 2rem;
 }
-
-td {
-  padding: 8px;
-  line-height: 1.428571429;
-  vertical-align: top;
-  border-bottom: 1px solid #dddddd;
+body > article {
+  @include column(8);
 }
-
-body > header,
-body > article,
 body > footer {
-  margin: 3em 0;
+  @include column(12);
 }
 
-body > header > h1 {
-  font-size: 3em;
-  margin-top: 1em;
-}
+@media screen and (max-width: 800px) {
+  body > article {
+    @include column(12);
+  }
+  body > .collections {
+    @include column(12);
+    padding-left: 0;
 
-form.search {
-  position: fixed;
-  padding: 5px 10px;
-  background-color: rgba(255,255,255,0.7);
-  box-shadow: 1px 1px 2px #666;
-  right: 0;
-  top: 0;
-}
-form.search input {
-  padding: 1px 5px;
-  margin: 0 5px;
-  width: 10em;
-}
-
-body > footer {
-  text-align: right;
-
-  p {
-    margin: 0.1em 0;
+    > section {
+      @include column(4);
+    }
   }
 }
 
-.collections {
-  float: left;
-  padding: 0.5em 1em;
-  top: 13em;
-  margin-left: -14em;
-  margin-bottom: 2em;
-  box-shadow: 1px 1px 2px #AAA;
-  background-color: #FFF1CC;
+@media screen and (max-width: 600px) {
+  body > article {
+    @include column(12);
+  }
+  body > .collections {
+    @include column(12);
+    padding-left: 0;
 
-  h2 {
-    font-size: 1em;
+    > section {
+      @include column(12);
+    }
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+}
+
+
+// Header {
+body > h1 {
+  .home {
+    font-size: 60%;
   }
-  a {
-    font-size: 12px;
+  .title {
     display: block;
-    box-sizing: border-box;
-    width: 11em;
   }
 }
+// } Header
+
+
+// Collections {
+body > .collections {
+  h2 {
+    border-bottom: 2px solid #888;
+  }
+}
+// } Collections
+
+
+// Article {
+body > article {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2.5rem 0 1rem 0;
+  }
+
+  > :first-child {
+    margin-top: 1.2rem;
+  }
+
+  > .highlight {
+    padding: 0.1em 1em;
+    margin: 1em 0;
+  }
+
+  > blockquote {
+    box-sizing: border-box;
+    border: 1px solid #DDD;
+    padding: 0.1em 1em;
+    margin: 1em 0;
+  }
+
+  iframe {
+    margin-top: 1em;
+  }
+}
+// } Article
+
+
+// Footer {
+body > footer {
+  border-top: 1px solid #666;
+  p {
+    margin: 0.2rem 0;
+    font-size: 75%;
+    text-align: center;
+  }
+}
+// } Footer
 
 
 .boxmodel-overlay {
@@ -225,11 +224,5 @@ body > footer {
   .textnode:after {
     content: '"';
     color: #888;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .collections {
-    display: none;
   }
 }

@@ -5,7 +5,7 @@ title: 블럭 요소와 인라인 요소
 HTML 요소는 크게 **블럭 요소(block element 또는 block-level element)**와 **인라인 요소(inline element)**로 나눌 수 있습니다.
 
 
-# 블럭 요소
+## 블럭 요소
 
 [CSS](/docs/CSS.html)를 통해 스타일을 변경하지 않았다면 블럭 요소(block element)는 화면의 가로폭 전체를 차지하는 직사각형 모양을 가집니다. 모든 인라인 요소는 블럭 요소 안에 속해 있어야하며, [body 요소](/html/body.html)에 바로 담길 수 있습니다.
 
@@ -36,7 +36,7 @@ HTML 요소는 크게 **블럭 요소(block element 또는 block-level element)*
 {% endhighlight %}
 
 
-# 인라인 요소
+## 인라인 요소
 
 인라인 요소(inline element)는 블럭 요소 혹은 다른 인라인 요소 안에만 쓰일 수 있으며 [CSS](/docs/CSS.html)를 통해 스타일을 변경하지 않았다면 기본적으로 **문장이 흐르듯** 흐르는 모양을 가집니다.
 
@@ -60,7 +60,7 @@ HTML 요소는 크게 **블럭 요소(block element 또는 block-level element)*
 ``@pp run``
 
 
-# 블럭 요소 및 인라인 요소 목록
+## 블럭 요소 및 인라인 요소 목록
 
 다음은 HTML5의 블럭 요소 목록입니다:
 

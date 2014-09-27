@@ -43,53 +43,54 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- } FB -->
 
-<header class="site-header">
-    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    <form class="search" method="GET" action="https://www.google.com/search">
-        <label for="searchField">검색: </label>
-        <input type="search" id="searchField" name="searchField" value="">
-        <input type="hidden" name="q" value="">
-    </form>
-</header>
+<h1>
+    <a class="home" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <span class="title">{{ page.title }}</span>
+</h1>
 
-<aside class="collections">
+<article>
+{{ content }}
+
+<!-- FB like { -->
+<div class="fb-like" data-href="{{ page.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="display: block; width: 100%; margin-top: 2rem;"></div>
+<!-- } FB like -->
+</article>
+
+<section class="collections">
+    <section class="guide">
     <h2>가이드</h2>
     <ul>
         {% for p in site.docs %}
         <li><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
     </ul>
+    </section>
 
+    <section class="guide">
     <h2>HTML</h2>
     <ul>
         {% for p in site.html %}
         <li><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
     </ul>
+    </section>
 
+    <section class="guide">
     <h2>CSS</h2>
     <ul>
         {% for p in site.css %}
         <li><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
     </ul>
-</aside>
-
-<article>
-  <header>
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-  </header>
-
-  {{ content }}
-</article>
-
-<!-- FB like { -->
-<div class="fb-like" data-href="http://localhost:4000/docs/Validation.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" style="display: block; width: 100%; height: auto; overflow: hidden;"></div>
-<!-- } FB like -->
+    </section>
+</section>
 
 <footer>
-<p><a href="https://github.com/html5tutorial/html5tutorial.github.io/issues">개선점, 오타, 깨진 링크, 아이디어 제안하기</a></p>
-<p><a href="https://github.com/html5tutorial/html5tutorial.github.io/edit/master{{ page.url | replace:'.html','.md' | replace:'/html/','/_html/' | replace:'/css/','/_css/' | replace:'/docs/','/_docs/'}}">이 페이지 편집하기</a></p>
+    <p class="copyright">이 사이트의 모든 문서는 <a href="http://creativecommons.org/licenses/by-nc/2.0/kr/" rel="license">크리에이티브 커먼즈 저작자표시-비영리 2.0</a> 저작권을 따름</p>
+    <p class="report">
+        <a href="https://github.com/html5tutorial/html5tutorial.github.io/issues">수정사항 건의하기</a> |
+        <a href="https://github.com/html5tutorial/html5tutorial.github.io/edit/master{{ page.url | replace:'.html','.md' | replace:'/html/','/_html/' | replace:'/css/','/_css/' | replace:'/docs/','/_docs/'}}">이 페이지 편집하기</a>
+    </p>
 </footer>
 
 </body>
