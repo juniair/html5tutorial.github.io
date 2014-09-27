@@ -18,7 +18,7 @@ HTML 요소는 크게 **블럭 요소(block element 또는 block-level element)*
 *   [li 요소](/html/li.html)
 *   [div 요소](/html/div.html)
 
-이 중 [blockquote 요소)(/html/blockquote.html)와 같은 일부 블럭 요소는 인라인 요소 뿐 아니라 다른 블럭 요소를 포함할 수 있습니다. 반면 [p 요소](/html/p.html)와 같은 블럭 요소는 다른 블럭 요소를 포함할 수 없습니다.
+이 중 [blockquote 요소](/html/blockquote.html)와 같은 일부 블럭 요소는 인라인 요소 뿐 아니라 다른 블럭 요소를 포함할 수 있습니다. 반면 [p 요소](/html/p.html)와 같은 블럭 요소는 다른 블럭 요소를 포함할 수 없습니다.
 
 따라서 다음은 올바른 HTML 이지만...
 
