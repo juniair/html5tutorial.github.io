@@ -114,8 +114,8 @@ p {
 {% highlight css %}
 .target {
     margin: 5px;
-    width: 80px;
-    height: 60px;
+    width: 90px;
+    height: 70px;
     float: right;
 }
 p {
