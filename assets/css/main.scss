@@ -132,7 +132,7 @@ body > article {
     margin: 1rem 0;
   }
   
-  code {
+  > code, p > code, li > code {
     background-color: #DDD;
     padding: 0.1rem 0.5rem;
     font-family: monospace;
