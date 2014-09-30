@@ -133,9 +133,12 @@ body > article {
   }
   
   > code, p > code, li > code {
-    background-color: #DDD;
-    padding: 0.1rem 0.5rem;
-    font-family: monospace;
+    border: 1px solid #dddddd;
+    background-color: #f8f8f8;
+    font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+    color: #666666;
+    border-radius: 3px;
+    padding: 0.1em 0.3em;
   }
 
   iframe {
@@ -172,7 +175,7 @@ body > footer {
 }
 
 .dom {
-  font-family: monospace;
+  font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 1em;
   padding-left: 1em;
 
