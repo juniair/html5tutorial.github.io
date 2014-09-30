@@ -120,16 +120,21 @@ body > article {
     margin-top: 1.2rem;
   }
 
-  > .highlight {
+  .highlight {
     padding: 0.1rem 1rem;
     margin: 1rem 0;
   }
 
-  > blockquote {
+  blockquote {
     box-sizing: border-box;
     border: 1px solid #DDD;
     padding: 0.1rem 1rem;
     margin: 1rem 0;
+  }
+  
+  code {
+    background-color: #DDD;
+    padding: 0.1rem 0.5rem;
   }
 
   iframe {
