@@ -33,6 +33,13 @@ JS Bin을 처음 사용한다면 다음 순서에 따라 가입할 수 있습니
 작업을 하다가 저장을 하고 싶으면 단축키 ``Ctrl+S``(맥에서는 ``Command+S``)를 누르거나 File 메뉴의 "Create milestone" 항목을 실행하세요.
 
 
+## github 홈페이지 만들기
+
+JS Bin은 간단한 HTML을 만들어보기에 좋지만, 여러 파일로 구성된 제대로된 홈페이지를 만드는 용도로는 적합하지 않습니다. JS Bin에서 충분히 연습을 한 후에 실제 홈페이지를 만들어보려면 github을 이용할 수 있습니다.
+
+자세한 내용은 [Github 페이지 만들기](/docs/github.html)를 참고하세요.
+
+
 ## 다음 단계
 
 *   [HTML 개요](/docs/HTML.html)
