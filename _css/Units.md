@@ -33,6 +33,12 @@ p {
 
 ``@pp run``
 
+[Box model]을 시각화하면 아래와 같습니다:
+
+``@pp run``
+
+``@pp boxmodel``
+
 
 # % 단위
 
