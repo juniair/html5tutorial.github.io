@@ -33,11 +33,41 @@ p {
 
 ``@pp run``
 
-[Box model]을 시각화하면 아래와 같습니다:
+[Box model](/css/Box_model.html)을 시각화하면 아래와 같습니다:
 
 ``@pp run``
 
 ``@pp boxmodel``
+
+해당 요소에 ``font-size``가 정의되어 있지 않다면 상위 요소로부터 상속된 ``font-size`` 값이 사용됩니다. 예를 들어 아래 예시에서 [strong 요소](/html/strong.html)의 ``font-size``는 명시적으로 지정되지 않았기 때문에 해당 요소의 ``em`` 값은 상위 요소에 의해 결정됩니다:
+
+{% highlight css %}
+.first {
+  font-size: 14px;
+}
+.second {
+  font-size: 20px;
+}
+{% endhighlight %}
+
+{% highlight html %}
+<p class="first">
+  CSS에서 em 단위는 <strong>현재 요소의 폰트 크기</strong>와 동일합니다.
+</p>
+<p class="second">
+  CSS에서 em 단위는 <strong>현재 요소의 폰트 크기</strong>와 동일합니다.
+</p>
+{% endhighlight %}
+
+``@pp run``
+
+[Box model](/css/Box_model.html)을 시각화하면 아래와 같습니다:
+
+``@pp run``
+
+``@pp boxmodel``
+
+
 
 
 # % 단위
