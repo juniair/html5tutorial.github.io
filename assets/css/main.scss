@@ -133,12 +133,11 @@ body > article {
   }
   
   > code, p > code, li > code {
-    border: 1px solid #dddddd;
-    background-color: #f8f8f8;
+    background-color: #EEE;
     font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
-    color: #666666;
+    color: #666;
     border-radius: 3px;
-    padding: 0.1em 0.3em;
+    padding: 1px 0.2em;
   }
 
   iframe {
