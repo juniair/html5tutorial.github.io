@@ -120,16 +120,25 @@ body > article {
     margin-top: 1.2rem;
   }
 
-  > .highlight {
+  .highlight {
     padding: 0.1rem 1rem;
     margin: 1rem 0;
   }
 
-  > blockquote {
+  blockquote {
     box-sizing: border-box;
     border: 1px solid #DDD;
     padding: 0.1rem 1rem;
     margin: 1rem 0;
+  }
+  
+  > code, p > code, li > code {
+    border: 1px solid #dddddd;
+    background-color: #f8f8f8;
+    font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
+    color: #666666;
+    border-radius: 3px;
+    padding: 0.1em 0.3em;
   }
 
   iframe {
@@ -166,7 +175,7 @@ body > footer {
 }
 
 .dom {
-  font-family: monospace;
+  font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace;
   font-size: 1em;
   padding-left: 1em;
 

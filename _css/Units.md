@@ -1,0 +1,75 @@
+---
+title: CSS 단위들
+---
+
+폰트의 크기, 여백의 크기, 테두리의 두께, 각 요소의 너비나 높이 등 CSS에서 시각적인 크기를
+지정할 때 픽셀 단위 뿐 아니라 다양한 단위를 사용할 수 있습니다.
+
+
+# 픽셀 단위
+
+가장 이해하기 쉬운 단위는 픽셀 단위이며, ``px``로 표기합니다.
+
+
+# em 단위
+
+CSS에서 em 단위는 현재 요소의 폰트 크기와 동일합니다. 예를 들어 폰트의 크기가 ``16px``인
+요소에서 ``2em``은 ``32px``과 같습니다. 따라서 아래 예시에서 [p 요소](/html/p.html)의 ``padding``은 ``32px`` 크기를 갖습니다:
+
+{% highlight css %}
+p {
+  font-size: 16px;
+  padding: 2em;
+  border: 1px solid black;
+}
+{% endhighlight %}
+
+{% highlight html %}
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+{% endhighlight %}
+
+``@pp run``
+
+[Box model](/css/Box_model.html)을 시각화하면 아래와 같습니다:
+
+``@pp run``
+
+``@pp boxmodel``
+
+해당 요소에 ``font-size``가 정의되어 있지 않다면 상위 요소로부터 상속된 ``font-size`` 값이 사용됩니다. 예를 들어 아래 예시에서 [strong 요소](/html/strong.html)의 ``font-size``는 명시적으로 지정되지 않았기 때문에 해당 요소의 ``em`` 값은 상위 요소에 의해 결정됩니다:
+
+{% highlight css %}
+.first {
+  font-size: 14px;
+}
+.second {
+  font-size: 20px;
+}
+{% endhighlight %}
+
+{% highlight html %}
+<p class="first">
+  CSS에서 em 단위는 <strong>현재 요소의 폰트 크기</strong>와 동일합니다.
+</p>
+<p class="second">
+  CSS에서 em 단위는 <strong>현재 요소의 폰트 크기</strong>와 동일합니다.
+</p>
+{% endhighlight %}
+
+``@pp run``
+
+[Box model](/css/Box_model.html)을 시각화하면 아래와 같습니다:
+
+``@pp run``
+
+``@pp boxmodel``
+
+
+
+
+# % 단위
+
+...
