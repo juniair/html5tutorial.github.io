@@ -13,12 +13,12 @@ title: CSS 단위들
 {% highlight css %}
 div {
     width: 300px;
-    background-color: #FCC;
+    background-color: #CCF;
 }
 p {
     width: 100px;
     margin-left: 50px;
-    background-color: #FAA;
+    background-color: #AAF;
 }
 {% endhighlight %}
 
@@ -107,17 +107,51 @@ strong {
 {% highlight css %}
 div {
     width: 300px;
-    background-color: #FCC;
+    background-color: #CCF;
 }
 p {
     width: 50%;
-    background-color: #FAA;
+    background-color: #AAF;
 }
 {% endhighlight %}
 
 {% highlight html %}
 <div>
     <p>상위 요소의 50%</p>
+</div>
+{% endhighlight %}
+
+``@pp run``
+
+``%`` 단위를 잘 활용하면 화면 크기에 맞춰 크기가 변하는 레이아웃을 쉽게 표현할 수 있습니다. 예를 들어 아래 예시에서 파란색 상자는 부모 요소의 크기에
+맞게 자동으로 늘어나거나 줄어듭니다:
+
+{% highlight css %}
+.box {
+    float: left;
+    width: 32%;
+    height: 50px;
+    margin: 5px 1px;
+    background-color: #CCF;
+}
+.wide {
+    width: 300px;
+}
+.narrow {
+    width: 200px;
+}
+{% endhighlight %}
+
+{% highlight html %}
+<div class="wide">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<div class="narrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </div>
 {% endhighlight %}
 
