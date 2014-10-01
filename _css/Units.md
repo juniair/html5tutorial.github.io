@@ -14,7 +14,7 @@ title: CSS 단위들
 # em 단위
 
 CSS에서 em 단위는 현재 요소의 폰트 크기와 동일합니다. 예를 들어 폰트의 크기가 ``16px``인
-요소에서 ``2em``은 ``32px``과 같습니다.
+요소에서 ``2em``은 ``32px``과 같습니다. 따라서 아래 예시에서 [p 요소](/html/p.html)의 ``padding``은 ``32px`` 크기를 갖습니다:
 
 {% highlight css %}
 p {
@@ -25,10 +25,14 @@ p {
 {% endhighlight %}
 
 {% highlight html %}
-<p>Hello There?</p>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
 {% endhighlight %}
 
 ``@pp run``
+
 
 # % 단위
 
