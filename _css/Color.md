@@ -12,7 +12,7 @@ CSS를 이용하면 폰트 색상(``color``), 배경 색상(``background-color``
 
 {% highlight css %}
 p {
-  border: 1px solid red;
+  border: 3px solid red;
   background-color: black;
   color: white;
 }
@@ -26,8 +26,29 @@ p {
 
 ``@pp run``
 
+위 예시에서 테두리는 ``red``, 배경색은 ``black``, 글자색은 ``white`` 등으로 지정하였습니다. 이 방식은 직관적이고 배우기 쉽지만 색상 단어의 종류가 제한되어 있어서 원하는 색상을 마음대로 쓸 수 없다는 단점이 있습니다.
+
 
 # RGB
+
+빛의 삼원색(빨강, 녹색, 파랑 = Red, Green, Blue = RGB)을 원하는 비율로 조합하여 지정하는 방식을 사용하면 색상을 더 정밀하게 지정할 수 있습니다.
+
+{% highlight css %}
+p {
+  border: 3px solid rgb(255, 100, 100);
+  background-color: rgb(255, 200, 200);
+  color: rgb(200, 50, 50);
+}
+{% endhighlight %}
+
+{% highlight html %}
+<p>
+   미묘한 붉은색들
+</p>
+{% endhighlight %}
+
+위 문법에서는 ``red``, ``black``과 같은 색상 단어 대신 빨강, 녹색, 파랑 값을 각각 ``0``에서 ``255`` 사이로 지정한 값을
+사용하고 있습니다. ``0``은 빛이 없음을 의미하고 ``255``는 빛이 가장 강함을 의미합니다. 예를 들어 ``rgb(255, 127, 0)``은 빨간빛이 가장 강하고, 녹색빛이 중간 쯤이고, 파란빛이 전혀 없는 색상 조합을 뜻합니다. ``rgb(0,0,0)``은 아무 빛도 없으므로 검정색, ``rgb(255,255,255)``는 모든 빛이 가장 밝으므로 흰색을 나타냅니다.
 
 
 # RGBA
