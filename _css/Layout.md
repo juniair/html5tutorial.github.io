@@ -147,4 +147,53 @@ p {
 
 # 측면 메뉴
 
+CSS를 잘 활용하면 아래와 같이 화면 좌측 혹은 우측에 측면 메뉴를 배치할 수 있습니다.
+
+{% highlight css %}
+nav {
+    float: left;
+    width: 30%;
+    background-color: #EEE;
+}
+article {
+    float: left;
+    width: 70%;
+}
+p {
+    margin-left: 1em;
+}
+article:after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+{% endhighlight %}
+
+``@pp hide``
+
+{% highlight html %}
+<nav>
+    <ul>
+    <li>메뉴 1</li>
+    <li>메뉴 2</li>
+    <li>메뉴 3</li>
+    </ul>
+</nav>
+<article>
+    <p>2단 레이아웃 예시</p>
+    <p>좌측에 메뉴를 놓고 우측에는 컨텐츠를 배치하기</p>
+</article>
+{% endhighlight %}
+
+``@pp hide``
+
+``@pp run``
+
+
+## float 을 활용하는 방법
+
+(...작성중...)
+
+## position 을 활용하는 방법
+
 (...작성중...)
