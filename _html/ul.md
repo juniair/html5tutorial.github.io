@@ -1,5 +1,6 @@
 ---
 title: ul
+html5ref: ul
 ---
 ul [요소](/docs/HTML_Element.html)는 "Unordered list"의 약자이며, 순서없는 목록을 나타내기 위해 사용합니다.
 

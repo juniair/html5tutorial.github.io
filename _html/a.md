@@ -1,5 +1,6 @@
 ---
 title: a
+html5ref: a
 ---
 a [요소](/docs/HTML_Element.html)는 "Anchor"의 약자이며, 웹 문서에 다른 웹 문서나 인터넷 상의 다른 자원으로 연결되는 하이퍼링크(hyperlink)를 넣기 위해 사용합니다.
 

@@ -1,5 +1,6 @@
 ---
 title: ol
+html5ref: ol
 ---
 ol [요소](/docs/HTML_Element.html)는 "Ordered list"의 약자이며, 순서있는 목록을 나타내기 위해 사용합니다.
 

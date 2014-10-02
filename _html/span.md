@@ -1,5 +1,6 @@
 ---
 title: span
+html5ref: span
 ---
 span [요소](/docs/HTML_Element.html)는 특별한 의미가 없는 [인라인 요소](/docs/Block_and_inline_element.html)입니다. [strong 요소](/html/strong.html)나 [a 요소](/html/a.html)처럼 의미가 있는 인라인 요소를 사용하기 어려운 상황에만 제한적으로 됩니다.
 

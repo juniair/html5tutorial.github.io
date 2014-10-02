@@ -1,5 +1,6 @@
 ---
 title: table
+html5ref: table
 ---
 table [요소](/docs/HTML_Element.html)는 "표"를 마크업할 때 쓰입니다.
 

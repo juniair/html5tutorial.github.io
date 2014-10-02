@@ -1,5 +1,6 @@
 ---
 title: body
+html5ref: body
 ---
 body 요소는 문서의 본문을 담는 요소로 아래와 같이 [html 요소](/html/html.html) 안에, [head 요소](/html/head.html) 다음에 적습니다.
 

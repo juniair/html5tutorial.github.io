@@ -54,6 +54,15 @@ fjs.parentNode.insertBefore(js, fjs);
 <article>
 {{ content }}
 
+{% if page.html5ref %}
+<h2>
+    참고 자료
+</h2>
+<ul>
+    <li><a href="http://html5ref.clearboth.org/html5:element:{{ page.html5ref }}">HTML5 오픈 레퍼런스</a></li>
+</ul>
+{% endif %}
+
 <!-- FB like { -->
 <div
     class="fb-like"
@@ -81,7 +90,9 @@ fjs.parentNode.insertBefore(js, fjs);
     <h2>HTML</h2>
     <ul>
         {% for p in site.html %}
+        {% if p.hide != 1 %}
         <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
         {% endfor %}
     </ul>
     </section>

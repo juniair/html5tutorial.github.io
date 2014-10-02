@@ -1,5 +1,6 @@
 ---
 title: p
+html5ref: p
 ---
 p [요소](/docs/HTML_Element.html)는 "Paragraph"의 약자로 "단락"이라는 뜻입니다. 예를 들어 다음 글은 두 개의 단락으로 구성되어
 있습니다:

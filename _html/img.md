@@ -1,5 +1,6 @@
 ---
 title: img
+html5ref: img
 ---
 img [요소](/docs/HTML_Element.html)는 "Image"의 약자이며, 웹 문서에 사진이나 그림을 삽입하기 위해 사용됩니다.
 
