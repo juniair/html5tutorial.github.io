@@ -149,8 +149,14 @@ p {
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
 </div>
 <div class="narrow">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
