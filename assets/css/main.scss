@@ -68,7 +68,7 @@ body > footer {
     padding-left: 0;
 
     > section {
-      @include column(4);
+      @include column(3);
     }
   }
 }
@@ -138,6 +138,10 @@ body > article {
     color: #666;
     border-radius: 3px;
     padding: 1px 0.2em;
+  }
+
+  canvas {
+    border: 1px solid #DDD;
   }
 
   iframe {

@@ -11,6 +11,8 @@ function postproc(rootSelector) {
             processRun($this);
         } else if(text === '@pp dom') {
             processDom($this);
+        } else if(text === '@pp processing') {
+            processProcessing($this);
         } else if(text === '@pp hide') {
             $this.parent().prev().hide(true);
         } else {
@@ -126,6 +128,26 @@ function postproc(rootSelector) {
             $(e.currentTarget).toggleClass('collapsed');
             e.stopPropagation();
         });
+    }
+
+    function processProcessing($element) {
+        var $parent = $element.parent();
+        var $prev = $parent.prevAll('.highlight, code').first();
+        var code = $prev.text();
+        var w = $parent.width();
+        var h = Math.floor(w * 0.4);
+        var $canvas = $('<canvas>');
+        $canvas.insertAfter($parent);
+        eval(
+                'var _proc = (function(processing) {' +
+                '   with(processing) {' +
+                '       size(' + (w-2) + ',' + (h-2) + ');' +
+                '       background(255,255,255);' +
+                code +
+                '   }' +
+                '});' +
+                'new Processing($canvas.get()[0], _proc);'
+        );
     }
 
     function _visualizeBoxmodel(element) {

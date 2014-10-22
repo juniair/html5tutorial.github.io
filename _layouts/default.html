@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script src="/assets/js/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/processing.min.js"></script>
     <script src="/assets/js/postproc.js"></script>
     <script>
         $(function() {
@@ -101,6 +102,15 @@ fjs.parentNode.insertBefore(js, fjs);
     <h2>CSS</h2>
     <ul>
         {% for p in site.css %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endfor %}
+    </ul>
+    </section>
+
+    <section class="guide">
+    <h2>자바스크립트</h2>
+    <ul>
+        {% for p in site.js %}
         <li><a href="{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
     </ul>
