@@ -22,6 +22,7 @@ HTML을 배우는 좋은 방법 중 하나는 실제로 작동하는 웹 사이�
 *   Web Standard Korea의 [HTML5 가이드](http://webstandards.or.kr/html5/)
 *   [clearboth.org의 HTML5 명세서 한글 번역](http://html5.clearboth.org/spec.html)
 *   [clearboth.org의 HTML5 요소 사전](http://html5ref.clearboth.org/)
+*   [CSS 2.0 명세서 한글 번역](http://trio.co.kr/webrefer/css2/cover.html)
 
 
 ## 영어 공부하기
