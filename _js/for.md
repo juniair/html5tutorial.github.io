@@ -30,3 +30,31 @@ for(var i = 0; i < 100; i = i + 20) {
 {% endhighlight %}
 
 ``@pp processing``
+
+위 코드를 ``for`` 문 없이 다시 쓰면 아래와 같습니다:
+
+{% highlight javascript %}
+var i = 0;
+rect(i, i, 10, 10);
+i = i + 20;
+rect(i, i, 10, 10);
+i = i + 20;
+rect(i, i, 10, 10);
+i = i + 20;
+rect(i, i, 10, 10);
+i = i + 20;
+rect(i, i, 10, 10);
+i = i + 20;
+{% endhighlight %}
+
+``@pp processing``
+
+반복 횟수가 다섯번이라는 사실을 좀 더 명시적으로 나타내고 싶으면 아래와 같이 변경할 수 있습니다:
+
+{% highlight javascript %}
+for(var i = 0; i < 5; i = i + 1) {
+    rect(i * 20, i * 20, 10, 10);
+}
+{% endhighlight %}
+
+``@pp processing``
