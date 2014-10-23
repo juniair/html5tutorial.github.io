@@ -35,6 +35,7 @@ for(var i = 0; i < 100; i = i + 20) {
 
 {% highlight javascript %}
 var i = 0;
+
 rect(i, i, 10, 10);
 i = i + 20;
 rect(i, i, 10, 10);
@@ -55,6 +56,44 @@ i = i + 20;
 for(var i = 0; i < 5; i = i + 1) {
     rect(i * 20, i * 20, 10, 10);
 }
+{% endhighlight %}
+
+``@pp processing``
+
+``for`` 문 안에 또다른 ``for`` 문을 겹쳐서 사용하면 좀 더 재미있는 효과를 낼 수 있습니다:
+
+{% highlight javascript %}
+for(var i = 0; i < 2; i = i + 1) {
+    for(var j = 0; j < 3; j = j + 1) {
+        rect(i * 20, j * 20, 10, 10);
+    }
+}
+{% endhighlight %}
+
+``@pp processing``
+
+위 코드를 ``for`` 문 없이 다시 쓰면 아래와 같습니다:
+
+{% highlight javascript %}
+var i = 0;
+
+var j = 0;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+i = i + 1;
+
+var j = 0;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+rect(i * 20, j * 20, 10, 10);
+j = j + 1;
+i = i + 1;
 {% endhighlight %}
 
 ``@pp processing``
