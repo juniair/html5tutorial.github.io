@@ -97,3 +97,5 @@ i = i + 1;
 {% endhighlight %}
 
 ``@pp processing``
+
+``for`` 문 이외에 [while 문](/js/while.html)을 써도 동일한 기능을 수행할 수 있습니다.
